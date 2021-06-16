@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
                 "privacy"
             end
 
-        render view_to_render, layout: 'blogpost'
+        render view_to_render#, layout: 'blogpost'
     end
 
     def current_time
