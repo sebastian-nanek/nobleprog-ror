@@ -1,0 +1,7 @@
+Aktualny czas: <%= DateTime.now %>
+
+<% if Time.now.hour > 21 || Time.now.hour < 5 %>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Night_Photography.jpg/1280px-Night_Photography.jpg" width="200>
+<% else %>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Daylighting_-_Skylight.jpg/800px-Daylighting_-_Skylight.jpg" width="200>
+<% end %>
