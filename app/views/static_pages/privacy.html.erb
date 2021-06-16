@@ -1,1 +1,7 @@
 domyslny jezyk
+
+<% Faker::Lorem.paragraphs(number: 6).each do |par| %>
+    <p>
+      <%= par %>
+    </p>
+<% end %>

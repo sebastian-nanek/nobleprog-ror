@@ -8,6 +8,6 @@ class StaticPagesController < ApplicationController
                 "privacy"
             end
 
-        render view_to_render
+        render view_to_render, layout: 'blogpost'
     end
 end
