@@ -13,11 +13,20 @@
   <body>
     <h1>My first Blog in RoR</h1>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
 
     <br>
     <hr>
-
+    <% if user_signed_in? %>
+      Signed in as: <b><%= current_user.email %></b>
+    <% else %> 
+      <%= link_to 'Sign In', new_user_session_path %> |
+      <%= link_to 'Sign Up', new_user_registration_path %> |
+    <% end %>
+    <%= link_to 'Posts Index', posts_path %> |
     <%= link_to 'Current timee', current_time_path %> |
     <%= link_to 'Privacy policy', privacy_path %>
   </body>

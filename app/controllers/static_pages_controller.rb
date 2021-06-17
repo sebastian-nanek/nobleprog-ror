@@ -14,4 +14,6 @@ class StaticPagesController < ApplicationController
 
     def current_time
     end
+
+    def home; end
 end
