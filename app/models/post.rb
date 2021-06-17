@@ -4,6 +4,9 @@ class Post < ApplicationRecord
     end
 
     def content_keywords(count)
-        content.split('.').map {|x|x.split(' ')}.flatten.sample(count)
+        content.split('.').
+            map {|x|x.split(' ')}.
+            flatten.
+            sample(count)
     end
 end
